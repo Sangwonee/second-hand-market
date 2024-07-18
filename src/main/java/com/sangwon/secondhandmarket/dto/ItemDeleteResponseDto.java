@@ -1,8 +1,10 @@
 package com.sangwon.secondhandmarket.dto;
 
+import lombok.AllArgsConstructor;
 import lombok.Getter;
 
 @Getter
+@AllArgsConstructor
 public class ItemDeleteResponseDto {
-    private String msg = "삭제완료";
+    private String msg;
 }

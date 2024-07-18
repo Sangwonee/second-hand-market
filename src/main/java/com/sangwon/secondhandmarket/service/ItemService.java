@@ -43,7 +43,7 @@ public class ItemService {
     public ItemDeleteResponseDto deleteItem(Long id) {
         Item item = findItem(id);
         itemRepository.delete(item);
-        return new ItemDeleteResponseDto();
+        return new ItemDeleteResponseDto("삭제완료");
     }
 
 
